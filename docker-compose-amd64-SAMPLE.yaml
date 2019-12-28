@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  mail-mailslurper:
+    image: "tsle/mail-mailslurper-amd64:latest"
+    ports:
+      # SMTP Port:
+      - 2500:2500
+      # Webinterface Port:
+      - 9009:8080
+      # Services Port to access the API - required for the Webinterface:
+      - 8085:8085
+    volumes:
+      - $PWD/mpconfig/custom-config.json:/opt/mailslurper/config.json
+    restart: unless-stopped
+    stdin_open: false
+    tty: false
