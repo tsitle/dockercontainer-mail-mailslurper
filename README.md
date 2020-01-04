@@ -28,3 +28,10 @@ you'll need replace "9009" in above URL with that port number.
 ## Required Docker Image
 The Docker Image **mail-mailslurper-\<ARCH\>** will automaticly be downloaded from the Docker Hub.  
 The source for the image can be found here [https://github.com/tsitle/dockerimage-mail-mailslurper](https://github.com/tsitle/dockerimage-mail-mailslurper).
+
+## Configuration
+[Server Settings](CONFIG_SERVER.md)  
+Source: [https://github.com/mailslurper/mailslurper/wiki/Server-Configuration](https://github.com/mailslurper/mailslurper/wiki/Server-Configuration)
+
+[Using a SQL-Server](CONFIG_SQLSERVER.md)  
+Source: [https://github.com/mailslurper/mailslurper/wiki/Using-A-SQL-Server](https://github.com/mailslurper/mailslurper/wiki/Using-A-SQL-Server)
